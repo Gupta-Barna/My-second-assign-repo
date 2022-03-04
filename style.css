@@ -24,8 +24,11 @@ padding-top: 1rem;
 
 }
 
-.banner-img img{
+.banner-img img:hover{
 width: 80%;
+
+transform: rotate(360deg);
+transition: transform 2s ease;
 }
 .banner-text button{
 padding: 20px 30px;

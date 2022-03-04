@@ -1,0 +1,223 @@
+/*----- google font popins------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+    height: 600px;
+    background-color: navy;
+    padding: 4rem;
+    color: white;
+}
+.banner-text h1{
+font-size: 4rem;
+padding-top: 1rem;
+
+}
+
+.banner-img img{
+width: 80%;
+}
+.banner-text button{
+padding: 20px 30px;
+background-color: tomato;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+font-size: 1.1rem;
+}
+
+
+
+
+/* player part */
+.container{
+    padding-top: 1.8rem;
+    margin: 0 auto;
+    background: #ffffff;
+    width: 80%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.8rem;
+    justify-content: center;
+    align-items: center;
+}
+.player-card{
+    width: 330px;
+    height: 474px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+.player-detail h2{
+    color: #18191F;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: .7rem 0;
+}
+
+.player-detail p{
+    color: #201c1c;
+    font-size: 1rem;
+}
+.player-img img{
+    width: 330px;
+    height: 256px;
+}
+
+/* -------- fifa event ---------- */
+.event-section{
+    background-color:gray;
+    padding: 2rem 0 6rem 0;
+    color: #f1f1f1;
+    margin: 5rem 0;  
+    width: 100%;
+}
+.section-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+.events{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+}
+.event{
+    background-color: #18191F;
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: 520px;
+}
+.event-detail h2{
+    font-size: 1.4rem;
+    padding: 1rem 0 .7rem 0;
+}
+.event-detail p{
+    font-size: .9rem;
+    padding: .5rem 0 1rem 0;
+}
+.thumbnail img{
+    width: 100%;
+    margin: 0 auto;
+}
+/* footer part */
+footer{
+    width: 485px;
+    height: 215px;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 1rem 0;
+}
+.footer-logo img{
+    width: 85%;
+    padding: 1rem 0;
+
+}
+footer .footer-icon{
+    color: #969BAB;
+    display: flex;
+    justify-content: center;
+}
+.custom-style{
+    font-size: 30px;
+    background-color: #ccced370;
+    margin-right: .7rem;
+    padding: .6rem;
+    border-radius: 25px;
+}
+footer small{
+    display: flex;
+    padding: 1.5rem 0;
+    justify-content: center;
+    color: #111;
+}
+footer span{
+    color: #2545ac;
+    margin: 0.3rem;
+}
+
+
+/* media query */
+@media only screen and (max-width: 688px) {
+    
+    .banner {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+    }
+    .banner-img{
+        width: 100%;
+       
+    }
+
+    /*  player section */ 
+    .container{
+        width: 90%;
+        
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .player-img img{
+        width: 100%;
+    }
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    .container{
+        width: 90%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+  
+     /*event section*/
+     .event-section{
+        width: 100%;
+        padding: 0;
+        background: #f1f1f1;
+    }
+    .event{
+        width: 330px;
+    }
+    .section-title{
+        font-size: 1.6rem;
+    }
+
+    /* footer part */
+    footer{
+        width: 100%;
+    }
+
+} 
+
+
+
+
+
+
